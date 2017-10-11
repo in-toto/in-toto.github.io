@@ -360,8 +360,16 @@ Full-Width Styles
   border-bottom: 1px solid #111;
 }
 
+#video_embed {
+  padding-top: 40px;
+}
+
 #main_content {
   padding-top: 40px;
+}
+
+#main_content iframe {
+  margin: 20px 0 40px 0;
 }
 
 #faq {
