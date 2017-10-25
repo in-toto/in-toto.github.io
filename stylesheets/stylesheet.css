@@ -316,68 +316,6 @@ Full-Width Styles
   padding: 20px 10px 0px 10px;
 }
 
-/* header menu */
-#header_wrap .main_menu{
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: right;
-  text-shadow: #111 0px 0px 10px;
-}
-
-#header_wrap .main_menu .menuitem{
-  padding: 0px 10px 20px 10px;
-}
-
-/* Style The Dropdown Button */
-#header_wrap .main_menu .menuitem .dropbtn {
-	background-color: transparent; 
-	color: white;
-    padding: 0px 10px 10px 10px;
-/*    font-size: 16px; */
-    border: none;
-    min-width: 120px;
-    cursor: pointer;
-  text-shadow: #111 0px 0px 10px;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 140px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  text-align: left;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu on hover */
-.menuitem:hover .dropdown-content {
-    display: inline-grid;
-	margin-top: 30px;
-	margin-left: -120px;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.menuitem:hover .dropbtn {
-	background: red;
-    border-left: solid 2px #fff;
-}
-
-
-
 #project_title {
   margin: 0;
   color: #fff;
