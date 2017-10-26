@@ -31,37 +31,34 @@
                         <label for="drop-1">About</label>
                         <input id="drop-1" type="checkbox">
                         <ul>
-                            <li><a href="#">What is in-toto?</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">SSL@NYU</a></li>
+                            <li><a href="/in-toto.html">What is in-toto?</a></li>
+                            <li><a href="/integrations.html">Ongoing Integrations</a></li>
                         </ul>
                     </li>
                     <li>
                         <label for="drop-2">Community</label>
                         <input id="drop-2" type="checkbox"/>
                         <ul>
-                            <li><a href="#">Ongoing Integrations</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Contribute</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                            <li><a href="https://github.com/in-toto/in-toto/">Contribute</a></li>
                         </ul>
                     </li>
                     <li>
                         <label for="drop-3">Get started</label>
                         <input id="drop-3" type="checkbox"/>
                         <ul>
-                            <li><a href="#">Try it out</a></li>
-                            <li><a href="#">Metadata examples</a></li>
-                            <li><a href="#">Specifications</a></li>
-                            <li><a href="#">Layout tool</a></li>
+                            <li><a href="https://github.com/in-toto/demo">Try it out</a></li>
+                            <li><a href="/metadata-examples.html">Metadata examples</a></li>
+                            <li><a href="/specs.html">Specifications</a></li>
+                            <li><a href="https://in-toto.engineering.nyu.edu">Layout tool</a></li>
                         </ul>
                     </li>
                     <li>
                         <label for="drop-4">Learn more</label>
                         <input id="drop-4" type="checkbox"/>
                         <ul>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Videos</a></li>
-                            <li><a href="#">Compromises in the news</a></li>
+                            <li><a href="/news.html">News</a></li>
+                            <li><a href="/faq.html">Frequently Asked Questions</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -80,129 +77,6 @@
             height="460" frameborder="0"
             webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
-
-        <p>
-        A software supply chain is the series of steps performed when writing,
-        testing, packaging, and distributing software. A typical software
-        supply chain is composed of multiple steps "chained" together that
-        transform (e.g., compilation) or verify the state (e.g., linting) of
-        the project in order to drive it to a final product.
-        </p>
-
-        <p>
-        Supply chain security is crucial to the overall security of a software
-        product.  An attacker who is able to control a step in the supply chain
-        can alter the product for malicious intents that range from introducing
-        backdoors in the source code to including vulnerable libraries in the
-        final product. As a result, supply chain breaches are an impactful
-        means for an attacker to affect multiple users at once.
-        <p>
-
-        <p>
-        Although many frameworks exist to ensure security in the "last mile"
-        (e.g., software updaters), they may be providing integrity and
-        authentication to a product that is already vulnerable; it is possible
-        that, by the time the package makes it to a software update repository,
-        it has already been compromised.
-        </p>
-
-        <p>
-        in-toto is designed to ensure the integrity of a software product from
-        initiation to end-user installation. It does so by making it
-        transparent to the user what steps were performed, by whom and in what
-        order. As a result, with some guidance from the group creating the
-        software, in-toto allows the user to verify if a step in the supply chain
-        was intended to be performed, and if the step was performed by the
-        right actor.
-        </p>
-
-        <p>
-        You can read more about in-toto's internals in our <a href="https://github.com/in-toto/docs/raw/master/in-toto-spec.pdf">latest</a>
-        or <a href="https://github.com/in-toto/docs/blob/v0.9/in-toto-spec.pdf">stable</a> specification.
-        </p>
-
-      </section>
-
-      <section id="faq" class="inner">
-
-          <h3>Frequently Asked Questions</h3>
-
-          <strong>Where can I read more about in-toto?</strong></br>
-
-            You can read more about how in-toto works by taking a look at our <a
-                href="https://github.com/in-toto/docs/blob/v0.9/in-toto-spec.pdf">specification</a>
-
-            <br/>
-            <br/>
-
-            <strong>Where can I try in-toto?</strong></br>
-
-            We have an open-source reference implementation, which is still
-            under heavy development. You can also try our demo application <a
-            href="https://github.com/in-toto/demo">here</a>
-            </br></br>
-
-      </section>
-
-      <section id="news" class="inner">
-          <h3>News</h3>
-            <table>
-
-                <tr>
-                    <td> 10/17/17 </td>
-
-                    <td>
-                        A fix to our git tag metadata tampering attack paper [<a href="https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/torres-arias">USENIX'16</a>] has been included in the master branch of the pacman package manager and will be included in the next <a href="https://git.archlinux.org/pacman.git/commit/?id=39319c1860d200a9b4a3cc2c6975e3cece502f2d">release</a>.
-
-                    </td>
-                </tr>
-
-
-                <tr>
-                    <td> 08/10/17 </td>
-
-                    <td>
-                        Lukas presented in-toto at Debian's <a href="https://debconf17.debconf.org/">Debconf 2017</a>. You can watch the video of the talk <a href="https://debconf17.debconf.org/talks/100/">here</a>.
-
-                    </td>
-                </tr>
-
-
-                <tr>
-                    <td> 02/06/17 </td>
-
-                    <td>
-                        We presented a demo of in-toto at <a href="https://2017.dockercon.com/">Dockercon 2017</a>. You can watch the video <a href="https://www.youtube.com/watch?v=SNge7-t4JRE&index=34&list=PLkA60AVN3hh_nihZ1mh6cO3n-uMdF7UlV">here</a>.
-
-                    </td>
-                </tr>
-
-                <tr>
-                    <td> 01/17/17 </td>
-
-                    <td>
-                        A fix to our git tag metadata tampering vulnerability was merged into git's master branch and will be available starting from <a href="https://public-inbox.org/git/20170117233723.23897-1-santiago@nyu.edu/">git v2.12</a>. You can read more about it in our [<a href="https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/torres-arias">USENIX'16</a>] paper.
-                    </td>
-                </tr>
- 
-                <tr>
-                    <td> 14/10/16 </td>
-
-                    <td>
-                        We presented a demo of in-toto in the <a href="https://blog.docker.com/2016/10/docker-distributed-system-summit-videos-podcast-episodes/">Docker Distributed System Summit</a>. You can watch the video <a href="https://youtu.be/Aryr0O6H_2U?t=25m58s">here</a>.
-
-                    </td>
-                </tr>
-
-                <tr>
-                    <td> 07/10/16 </td>
-
-                    <td>
-                        We are live! please check back soon for more updates.
-                    </td>
-                </tr>
-            </table>
-
 
       </section>
     </div>
@@ -228,8 +102,6 @@
             Government is authorized to reproduce and distribute reprints
             notwithstanding any copyright notice herein.
         </p>
-
-
 
       </footer>
     </div>
