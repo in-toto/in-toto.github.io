@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="in-toto: A framework to secure the integrity of software supply chains" />
+    <LINK REL="icon" HREF="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/navbar.css">
+
+    <title>in-toto</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <h1 id="project_title">
+            <img class='logo' src="/images/logo-black.png"/>
+            <span>
+                in-toto
+            </span>
+          </h1>
+          <h2 id="project_tagline">A framework to secure the integrity of software supply chains</h2>
+            <nav>
+                <ul>
+                    <li>
+                        <label for="drop-1">About</label>
+                        <input id="drop-1" type="checkbox">
+                        <ul>
+                            <li><a href="/in-toto.html">What is in-toto?</a></li>
+                            <li><a href="/integrations.html">Ongoing Integrations</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-2">Community</label>
+                        <input id="drop-2" type="checkbox"/>
+                        <ul>
+                            <li><a href="/contact.html">Contact</a></li>
+                            <li><a href="https://github.com/in-toto">Contribute</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-3">Get started</label>
+                        <input id="drop-3" type="checkbox"/>
+                        <ul>
+                            <li><a href="https://github.com/in-toto/demo">Try it out</a></li>
+                            <li><a href="/metadata-examples.html">Metadata examples</a></li>
+                            <li><a href="/specs.html">Specifications</a></li>
+                            <li><a href="https://in-toto.engineering.nyu.edu">Layout tool</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="drop-4">Learn more</label>
+                        <input id="drop-4" type="checkbox"/>
+                        <ul>
+                            <li><a href="/news.html">News</a></li>
+                            <li><a href="#">Frequently Asked Questions</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+
+      <section id="main_content" class="inner">
+        <p>
+        A software supply chain is the series of steps performed when writing,
+        testing, packaging, and distributing software. A typical software
+        supply chain is composed of multiple steps "chained" together that
+        transform (e.g., compilation) or verify the state (e.g., linting) of
+        the project in order to drive it to a final product.
+        </p>
+
+        <p>
+        Supply chain security is crucial to the overall security of a software
+        product.  An attacker who is able to control a step in the supply chain
+        can alter the product for malicious intents that range from introducing
+        backdoors in the source code to including vulnerable libraries in the
+        final product. As a result, supply chain breaches are an impactful
+        means for an attacker to affect multiple users at once.
+        <p>
+
+        <p>
+        Although many frameworks exist to ensure security in the "last mile"
+        (e.g., software updaters), they may be providing integrity and
+        authentication to a product that is already vulnerable; it is possible
+        that, by the time the package makes it to a software update repository,
+        it has already been compromised.
+        </p>
+
+        <p>
+        in-toto is designed to ensure the integrity of a software product from
+        initiation to end-user installation. It does so by making it
+        transparent to the user what steps were performed, by whom and in what
+        order. As a result, with some guidance from the group creating the
+        software, in-toto allows the user to verify if a step in the supply chain
+        was intended to be performed, and if the step was performed by the
+        right actor.
+        </p>
+
+        <p>
+        You can read more about in-toto's internals in our <a href="https://github.com/in-toto/docs/raw/master/in-toto-spec.pdf">latest</a>
+        or <a href="https://github.com/in-toto/docs/blob/v0.9/in-toto-spec.pdf">stable</a> specification.
+        </p>
+
+      </section>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+
+        <p class="copyright">
+            in-toto is maintained by the <a href="https://ssl.engineering.nyu.edu">
+              Secure Systems Lab</a> at 
+             <a href="https://engineering.nyu.edu">New York University</a> 
+                as well as researchers from the
+                <a href="https://njit.edu">New Jersey Institute of Technology</a>.
+        </p>
+
+        <p class="acknowledgements"> 
+            This research was supported by the Defense Advanced Research
+            Projects Agency (DARPA) and the Air Force Research Laboratory
+            (AFRL). Any opinions, findings, and conclusions or recommendations
+            expressed in this material are those of the authors and do not
+            necessarily reflect the views of DARPA and AFRL. The United States
+            Government is authorized to reproduce and distribute reprints
+            notwithstanding any copyright notice herein.
+        </p>
+
+
+
+      </footer>
+    </div>
+
+  </body>
+</html>
