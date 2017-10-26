@@ -1,0 +1,13 @@
+.integrations img {
+  max-width: 120px;
+  padding: 0px 20px 10px 10px;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+}
+
+.integrations td {
+  vertical-align: middle;
+}
