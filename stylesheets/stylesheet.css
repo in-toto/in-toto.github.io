@@ -286,23 +286,6 @@ Full-Width Styles
   border-bottom-right-radius: 2px;
 }
 
-.logo {
-  width: 80px;
-  height: 80px;
-  border: none;
-  padding: 5px 20px 10px 10px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -o-box-shadow: none;
-  -ms-box-shadow: none;
-
-}
-
-#project_title span {
-  vertical-align: top;
-  font-size: 73px;
-}
-
 #header_wrap {
   background: #67798d;
   background: -moz-linear-gradient(top, #4a5265, #67798d);
@@ -316,14 +299,30 @@ Full-Width Styles
   padding: 20px 10px 0px 10px;
 }
 
-#project_title {
+#project_title span {
   margin: 0;
   color: #fff;
-  font-size: 42px;
   font-weight: 700;
-  text-shadow: #111 0px 0px 10px;
-  align: center;
+  font-size: 48px;
+  margin-left: 20px;
+  vertical-align: middle;
 }
+
+#project_title .logo {
+  width: 80px;
+  height: 80px;
+
+  /* reset image styles */
+  padding: 0;
+  margin: 0;
+  border: none;
+  vertical-align: middle;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+}
+
 
 #project_tagline {
   color: #fff;
