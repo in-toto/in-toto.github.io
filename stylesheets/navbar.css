@@ -16,7 +16,7 @@ nav > ul > li {
 /* Common style for top-nav and sub-nav items */
 nav label, nav a {
   padding: 14px 20px;
-  font-size: 12px;
+  font-size: 0.9em;
   display: block;
   cursor: pointer;
   text-decoration: none;
