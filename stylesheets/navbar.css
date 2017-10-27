@@ -58,7 +58,7 @@ nav input[type='checkbox'] {
   display: none;
 }
 
-@media all and (max-width : 480px) {
+@media only screen and (max-width: 768px){
   /* Top-nav items on small screens are not inline */
   nav ul li {
     display: block;
