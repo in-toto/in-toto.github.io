@@ -1,5 +1,6 @@
-title: Slate theme
-description: Slate is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
-theme: jekyll-theme-slate
+# You can access these variables using jekyll template language and the
+# `site` variable, e.g.: {{site.title}}
+# Look at layouts/default.html to see how they are used
+title: in-toto
+description: A framework to secure the integrity of software supply chains
+google_analytics: false
