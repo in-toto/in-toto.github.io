@@ -51,8 +51,9 @@ Theme Styles
 
 body {
   box-sizing: border-box;
-  color:#4a5265;
-  background: #67798d;
+  color:#1e1b26;
+  background: #295862;
+
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -99,7 +100,7 @@ p {
 }
 
 footer p {
-  color: #f2f2f2;
+  color: #f9faf4;
 }
 
 a {
@@ -235,7 +236,7 @@ table {
 th {
   font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 10px;
-  background: #4a5265;
+  background: #1e1b26;
   color: #fff;
  }
 
@@ -245,7 +246,7 @@ td {
  }
 
 form {
-  background: #f2f2f2;
+  background: #f9faf4;
   padding: 20px;
 }
 
@@ -280,17 +281,23 @@ Full-Width Styles
 }
 
 #header_wrap {
-  background: #67798d;
-  background: -moz-linear-gradient(top, #4a5265, #67798d);
-  background: -webkit-linear-gradient(top, #4a5265, #67798d);
-  background: -ms-linear-gradient(top, #4a5265, #67798d);
-  background: -o-linear-gradient(top, #4a5265, #67798d);
-  background: linear-gradient(top, #4a5265, #67798d);
+  background: #295862;
+  background: -moz-linear-gradient(top, #1e1b26, #295862, #295862);
+  background: -webkit-linear-gradient(top, #1e1b26, #295862, #295862);
+  background: -ms-linear-gradient(top, #1e1b26,#295862,  #295862);
+  background: -o-linear-gradient(top, #1e1b26, #295862, #295862);
+  background: linear-gradient(top, #1e1b26, #295862, #295862);
 }
 
 #header_wrap .inner {
   padding: 20px 10px 0px 10px;
 }
+
+#header_wrap .inner a:hover{
+  text-decoration:none;
+}
+
+
 
 #project_title span {
   margin: 0;
@@ -339,7 +346,7 @@ Full-Width Styles
   float: right;
   width: 45%;
   overflow: hidden;
-  padding: 10px
+  padding: 10px;
   vertical-align: middle;
 }
 
@@ -354,12 +361,21 @@ Full-Width Styles
 .info-tagline a{
   background-color: transparent;
   color: black;
-  border: 2px solid #67798d; /* Green */
+  border: 2px solid #86ccd6; 
   border-radius: 5px;
   padding: 5px;
   text-decoration: none !important;
 }
 
+.info-tagline:after {
+  background: #DAE9FF;
+}
+
+/*
+#in_toto_open_standard {
+  background: #DAE9FF;
+}
+*/
 #in_toto_open_standard img{
   float: left;
 }
@@ -383,7 +399,7 @@ Full-Width Styles
 }
 
 #main_content_wrap {
-  background: #f2f2f2;
+  background: #f9faf4;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
 }
@@ -402,7 +418,7 @@ Full-Width Styles
 }
 
 #footer_wrap {
-  background: #67798d;
+  background: #295862;
 }
 
 /* Responsive iframe/video trick
@@ -423,56 +439,6 @@ https://alistapart.com/article/creating-intrinsic-ratios-for-video
   height: 100%;
 }
 
-/*******************************************************************************
-Small Device Styles
-*******************************************************************************/
-
-@media screen and (max-width: 480px) {
-  body {
-    font-size:14px;
-  }
-
-  #downloads {
-    display: none;
-  }
-
-  .inner {
-    min-width: 320px;
-    max-width: 480px;
-  }
-
-  #project_title {
-  font-size: 32px;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  h3 {
-    font-size: 21px;
-  }
-
-  h4 {
-    font-size: 18px;
-  }
-
-  h5 {
-    font-size: 14px;
-  }
-
-  h6 {
-    font-size: 12px;
-  }
-
-  code, pre {
-    min-width: 320px;
-    max-width: 480px;
-    font-size: 11px;
-  }
-
+.copyright, .acknowledgements {
+  font-size: 0.8em;
 }
