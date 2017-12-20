@@ -38,7 +38,8 @@ nav a {
   }
 }
 
-nav label:hover, nav a:hover {
+nav label:hover, nav a:hover,
+nav label.active, nav a.active {
   text-decoration: underline;
 }
 

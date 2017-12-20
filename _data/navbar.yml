@@ -1,34 +1,34 @@
 - text: About
-  drop:
+  sub:
     - text: What is in-toto?
-      link: /in-toto.html
+      url: /in-toto.html
     - text: Ongoing Integrations
-      link: /integrations.html
+      url: /integrations.html
 
 - text: Community
-  drop:
+  sub:
     - text: Contact
-      link: /contact.html
+      url: /contact.html
     - text: Contribute
-      link: https://github.com/in-toto/in-toto/
+      url: https://github.com/in-toto/in-toto/
       external: true
 
 - text: Get started
-  drop:
+  sub:
     - text: Try it out
-      link: https://github.com/in-toto/demo
+      url: https://github.com/in-toto/demo
       external: true
     - text: Metadata examples
-      link: /metadata-examples.html
+      url: /metadata-examples.html
     - text: Specifications
-      link: /specs.html
+      url: /specs.html
     - text: Layout tool
-      link: https://in-toto.engineering.nyu.edu
+      url: https://in-toto.engineering.nyu.edu
       external: true
 
 - text: Learn more
-  drop:
+  sub:
     - text: News
-      link: /news.html
+      url: /news.html
     - text: Frequently Asked Questions
-      link: /faq.html
+      url: /faq.html
