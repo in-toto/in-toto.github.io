@@ -23,7 +23,7 @@ nav label, nav a {
 }
 
 /* Style for top-nav items */
-nav label {
+nav label, nav > ul > li > a {
   color: white;
   text-shadow: #111 0px 0px 10px;
 }
@@ -41,6 +41,10 @@ nav a {
 nav label:hover, nav a:hover,
 nav label.active, nav a.active {
   text-decoration: underline;
+}
+
+nav label:hover, nav label.active {
+  text-decoration-style: dotted;
 }
 
 /* Sub-nav (dropdowns) styles, hidden per default ... */

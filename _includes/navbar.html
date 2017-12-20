@@ -19,6 +19,9 @@
   {% endif %}
 
   <li>
+    {% if item.url %}
+    <a href="{{item.url}}">{{item.text}}</a>
+    {% else %}
     <label class="{{item_state}}" for="drop-{{forloop.index}}">{{item.text}}</label>
     <input id="drop-{{forloop.index}}" type="checkbox" {% if item_state == "active" %}checked{% endif %}>
     <ul>
@@ -45,6 +48,7 @@
       </li>
       {% endfor %}
     </ul>
+    {% endif %}
   </li>
   {% endfor %}
 </ul>
