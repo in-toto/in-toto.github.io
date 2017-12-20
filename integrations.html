@@ -1,65 +1,64 @@
 ---
 layout: default
+css_id: integrations
 ---
-<section id="integrations" class="inner">
-  <h3>Integrations</h3>
-    <table class="integrations">
-      <tr>
-        <td><img src="/assets/images/logos/repeatr.png"/></td>
-        <td>
-          We are actively working with <a href="https://repeatr.io">repeatr</a>
-          to create a cross-compatible metadata format that can be both used
-          for supply-chain step memoization and supply-chain security.
-        </td>
-      </tr>
-      <tr>
-        <td><img src="/assets/images/logos/reproducible-builds.png"/></td>
-        <td>
-          We are participating with the reproducible builds community to
-          improve the security properties of build systems. We are also
-          integrating in-toto into reprotest, so that people can create in-toto
-          metadta to attest for the reproducibility of a step.
-        </td>
-      </tr>
-      <tr>
-        <td><img src="/assets/images/logos/git.png"/></td>
-        <td>
-          We are working with the git community to improve the security model
-          of git metadata signing. We have already integrated three series
-          of patches to ensure GPG-signed git tags can't be spoofed. <!-- TODO: links -->
-        </td>
-      </tr>
-      <tr>
-        <td><img src="/assets/images/logos/debian.png"/></td>
-        <td>
-          We are actively working with the debian community so that in-toto
-          metadata is generated within Debian's software supply chain. In
-          addition, we intend to have in-toto metadata be verified when using
-          Debian's dpkg/apt toolchain.
-        </td>
-      </tr>
-      <tr>
-        <td><img src="/assets/images/logos/archlinux.png"/></td>
-        <td>
-          The Arch Linux community already included our patches
-          <a href='#'>git tag verification</a>. We aim to have an integration
-          similar to Debian's in the future.
-        </td>
-      </tr>
-      <tr>
-        <td><img src="/assets/images/logos/docker.png"></td>
-        <td>
-          Docker is currently trying out in-toto metadata internally to protect
-          the security properties of their pipelines.
-        </td>
-      </tr>
-      <tr>
-        <td><img src="/assets/images/logos/opensuse.png"></td>
-        <td>
-          We have a demo deployment of opensuse's OBS using in-toto. We are
-          working with the opensuse community to generate in-toto link metadata
-          within their OBS services.
-        </td>
-      </tr>
-    </table>
-</section>
+<h3>Integrations</h3>
+  <table>
+    <tr>
+      <td><img src="/assets/images/logos/repeatr.png"/></td>
+      <td>
+        We are actively working with <a href="https://repeatr.io">repeatr</a>
+        to create a cross-compatible metadata format that can be both used
+        for supply-chain step memoization and supply-chain security.
+      </td>
+    </tr>
+    <tr>
+      <td><img src="/assets/images/logos/reproducible-builds.png"/></td>
+      <td>
+        We are participating with the reproducible builds community to
+        improve the security properties of build systems. We are also
+        integrating in-toto into reprotest, so that people can create in-toto
+        metadta to attest for the reproducibility of a step.
+      </td>
+    </tr>
+    <tr>
+      <td><img src="/assets/images/logos/git.png"/></td>
+      <td>
+        We are working with the git community to improve the security model
+        of git metadata signing. We have already integrated three series
+        of patches to ensure GPG-signed git tags can't be spoofed. <!-- TODO: links -->
+      </td>
+    </tr>
+    <tr>
+      <td><img src="/assets/images/logos/debian.png"/></td>
+      <td>
+        We are actively working with the debian community so that in-toto
+        metadata is generated within Debian's software supply chain. In
+        addition, we intend to have in-toto metadata be verified when using
+        Debian's dpkg/apt toolchain.
+      </td>
+    </tr>
+    <tr>
+      <td><img src="/assets/images/logos/archlinux.png"/></td>
+      <td>
+        The Arch Linux community already included our patches
+        <a href='#'>git tag verification</a>. We aim to have an integration
+        similar to Debian's in the future.
+      </td>
+    </tr>
+    <tr>
+      <td><img src="/assets/images/logos/docker.png"></td>
+      <td>
+        Docker is currently trying out in-toto metadata internally to protect
+        the security properties of their pipelines.
+      </td>
+    </tr>
+    <tr>
+      <td><img src="/assets/images/logos/opensuse.png"></td>
+      <td>
+        We have a demo deployment of opensuse's OBS using in-toto. We are
+        working with the opensuse community to generate in-toto link metadata
+        within their OBS services.
+      </td>
+    </tr>
+  </table>
