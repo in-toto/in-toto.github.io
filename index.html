@@ -1,162 +1,58 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+css_id: landing
+---
+  <div class="video_wrapper">
+    <iframe src="https://player.vimeo.com/video/237799749"
+      width="800"
+      height="460" frameborder="0"
+      webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="in-toto: A framework to secure the integrity of software supply chains" />
-    <LINK REL="icon" HREF="favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/navbar.css">
-
-    <title>in-toto</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <h1 id="project_title">
-            <a href="/">
-            <img class='logo' src="/images/logo-black.png"/>
-            </a>
-            <span>in-toto</span>
-          </h1>
-          <h2 id="project_tagline">A framework to secure the integrity of software supply chains</h2>
-            <nav>
-                <ul>
-                    <li>
-                        <label for="drop-1">About</label>
-                        <input id="drop-1" type="checkbox">
-                        <ul>
-                            <li><a href="/in-toto.html">What is in-toto?</a></li>
-                            <li><a href="/integrations.html">Ongoing Integrations</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <label for="drop-2">Community</label>
-                        <input id="drop-2" type="checkbox"/>
-                        <ul>
-                            <li><a href="/contact.html">Contact</a></li>
-                            <li><a href="https://github.com/in-toto/in-toto/">Contribute</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <label for="drop-3">Get started</label>
-                        <input id="drop-3" type="checkbox"/>
-                        <ul>
-                            <li><a href="https://github.com/in-toto/demo">Try it out</a></li>
-                            <li><a href="/metadata-examples.html">Metadata examples</a></li>
-                            <li><a href="/specs.html">Specifications</a></li>
-                            <li><a href="https://in-toto.engineering.nyu.edu">Layout tool</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <label for="drop-4">Learn more</label>
-                        <input id="drop-4" type="checkbox"/>
-                        <ul>
-                            <li><a href="/news.html">News</a></li>
-                            <li><a href="/faq.html">Frequently Asked Questions</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+<div class="info-tagline-container">
+  <div class="info-tagline">
+    <div>
+      <h3>Software supply chain protection</h3>
+      <p>
+        Supply chain compromises are becoming a frequent occurrence.
+        In-toto can help you protect your software supply chain.
+      </p>
+      <a href="/in-toto.html">Read more</a>
     </div>
+    <img src="/assets/images/layout.png" />
+  </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-
-      <section id="main_content" class="inner">
-        <div class="video_wrapper">
-        <iframe src="https://player.vimeo.com/video/237799749"
-            width="800"
-            height="460" frameborder="0"
-            webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-
-      </section>
-
-      <section id="supply_chain_compromises" class="info-tagline inner">
-        <div class="text-description">
-            <h3>Software supply chain protection</h3>
-            <p>
-            Supply chain compromises are becoming a frequent occurrence. In-toto can help you protect your software supply chain.
-            </p>
-            <a href="/in-toto.html">
-                Read more 
-            </a>
-        </div>
-        <img src="/images/layout.png" />
-      </section>
-
-      <section id="in_toto_open_standard" class="inner info-tagline">
-        <img src="/images/metadata.png" />
-        <div class="text-description">
-            <h3>Open, Extensible Standard</h3>
-            <p>
-            in-toto is an open metadata standard that you can implement in your software's supply chain toolchain.
-            <p>
-            <a href="/specs.html">
-                Read the Specifications
-            </a>
-        </div>
-      </section>
-
-      <section id="in_toto_implementation" class="inner info-tagline">
-        <div class="text-description">
-            <h3>Extensive Tooling</h3>
-            <p>
-            You can use in-toto today by using your MIT-licensed library and tools
-            </p>
-            <a href="https://github.com/in-toto/in-toto">
-                Tools
-            </a>
-        </div>
-        <img src="/images/gears.png" />
-      </section>
-
-      <section id="in_toto_layout_tool" class="inner info-tagline">
-        <img src="/images/tool.png" />
-        <div class="text-description">
-            <h3>Try It Out!</h3>
-            <p>
-               Get started today designing an in-toto layout using our web layout tool.
-            <p>
-            <a href="https://in-toto.engineering.nyu.edu">
-               Get started. 
-            </a>
-        </div>
-      </section>
+  <div class="info-tagline">
+    <img src="/assets/images/metadata.png" />
+    <div>
+      <h3>Open, Extensible Standard</h3>
+      <p>
+        in-toto is an open metadata standard that you can implement in your
+        software's supply chain toolchain.
+      <p>
+      <a href="/specs.html">Read the Specifications</a>
     </div>
+  </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-
-        <p class="copyright">
-            in-toto is maintained by the <a href="https://ssl.engineering.nyu.edu">
-              Secure Systems Lab</a> at 
-             <a href="https://engineering.nyu.edu">New York University</a> 
-                as well as researchers from the
-                <a href="https://njit.edu">New Jersey Institute of Technology</a>.
-        </p>
-
-        <p class="acknowledgements"> 
-            This research was supported by the Defense Advanced Research
-            Projects Agency (DARPA) and the Air Force Research Laboratory
-            (AFRL). Any opinions, findings, and conclusions or recommendations
-            expressed in this material are those of the authors and do not
-            necessarily reflect the views of DARPA and AFRL. The United States
-            Government is authorized to reproduce and distribute reprints
-            notwithstanding any copyright notice herein.
-        </p>
-
-      </footer>
+  <div class="info-tagline">
+    <div>
+      <h3>Extensive Tooling</h3>
+      <p>
+        You can use in-toto today by using your MIT-licensed library and tools.
+      </p>
+      <a href="https://github.com/in-toto/in-toto">Tools</a>
     </div>
+    <img src="/assets/images/gears.png" />
+  </div>
 
-  </body>
-</html>
+  <div class="info-tagline">
+    <img src="/assets/images/tool.png" />
+    <div>
+      <h3>Try It Out!</h3>
+      <p>
+        Get started today designing an in-toto layout using our web layout tool.
+      <p>
+      <a href="https://in-toto.engineering.nyu.edu">Get started.</a>
+    </div>
+  </div>
+</div>

@@ -1,188 +1,64 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="in-toto: A framework to secure the integrity of software supply chains" />
-    <LINK REL="icon" HREF="favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/navbar.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/integrations.css">
-
-    <title>in-toto</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <h1 id="project_title">
-            <a href="/">
-            <img class='logo' src="/images/logo-black.png"/>
-            </a>
-            <span>
-                in-toto
-            </span>
-          </h1>
-          <h2 id="project_tagline">A framework to secure the integrity of software supply chains</h2>
-            <nav>
-                <ul>
-                    <li>
-                        <label for="drop-1">About</label>
-                        <input id="drop-1" type="checkbox">
-                        <ul>
-                            <li><a href="/in-toto.html">What is in-toto?</a></li>
-                            <li><a href="/integrations.html">Ongoing Integrations</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <label for="drop-2">Community</label>
-                        <input id="drop-2" type="checkbox"/>
-                        <ul>
-                            <li><a href="/contact.html">Contact</a></li>
-                            <li><a href="https://github.com/in-toto">Contribute</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <label for="drop-3">Get started</label>
-                        <input id="drop-3" type="checkbox"/>
-                        <ul>
-                            <li><a href="https://github.com/in-toto/demo">Try it out</a></li>
-                            <li><a href="/metadata-examples.html">Metadata examples</a></li>
-                            <li><a href="/specs.html">Specifications</a></li>
-                            <li><a href="https://in-toto.engineering.nyu.edu">Layout tool</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <label for="drop-4">Learn more</label>
-                        <input id="drop-4" type="checkbox"/>
-                        <ul>
-                            <li><a href="/news.html">News</a></li>
-                            <li><a href="#">Frequently Asked Questions</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="integrations" class="inner">
-          <h3>Integrations</h3>
-            <table class="integrations">
-
-                <tr>
-                    <td><img src="/images/logos/repeatr.png"/></td>
-
-                    <td>
-                      <span> 
-                      We are actively working with <a href="https://repeatr.io">repeatr</a>
-              to create a cross-compatible metadata format that can be both used for
-              supply-chain step memoization and supply-chain security.
-                      </span>
-                    </td>
-                </tr>
-
-
-                <tr>
-                    <td><img src="/images/logos/reproducible-builds.png"/></td>
-
-                    <td>
-                      <span>
-                      We are participating with the reproducible builds community to improve the security properties of build systems. We are also integrating in-toto into reprotest, so that people can create in-toto metadta to attest for the reproducibility of a step.
-                      </span>
-                    </td>
-                </tr>
-
-
-                <tr>
-                    <td><img src="/images/logos/git.png"/></td>
-
-                    <td>
-                      <span>
-                    We are working with the git community to improve the
-security model of git metadata signing. We have already integrated three series
-of patches to ensure GPG-signed git tags can't be spoofed. <!-- TODO: links -->
-                      </span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><img src="/images/logos/debian.png"/></td>
-
-                    <td>
-                      <span>
-                      We are actively working with the debian community so that in-toto metadata is generated within Debian's software supply chain. In addition, we intend to have in-toto metadata be verified when using Debian's dpkg/apt toolchain.
-                      </span>
-                    </td>
-                </tr>
- 
-                <tr>
-                    <td><img src="/images/logos/archlinux.png"/></td>
-
-                    <td>
-                      <span>
-                      The Arch Linux community already included our patches <a
-href='#'>git tag verification</a>. We aim to have an integration similar to
-Debian's in the future.
-                      </span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><img src="/images/logos/docker.png"></td>
-
-                    <td>
-                      <span>
-                      Docker is currently trying out in-toto metadata internally to protect the security properties of their pipelines.
-                      </span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><img src="/images/logos/opensuse.png"></td>
-
-                    <td>
-                      <span>
-                        We have a demo deployment of opensuse's OBS using in-toto. We are working with the opensuse community to generate in-toto link metadata within their OBS services.
-                      </span>
-                    </td>
-                </tr>
-            </table>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-
-        <p class="copyright">
-            in-toto is maintained by the <a href="https://ssl.engineering.nyu.edu">
-              Secure Systems Lab</a> at 
-             <a href="https://engineering.nyu.edu">New York University</a> 
-                as well as researchers from the
-                <a href="https://njit.edu">New Jersey Institute of Technology</a>.
-        </p>
-
-        <p class="acknowledgements"> 
-            This research was supported by the Defense Advanced Research
-            Projects Agency (DARPA) and the Air Force Research Laboratory
-            (AFRL). Any opinions, findings, and conclusions or recommendations
-            expressed in this material are those of the authors and do not
-            necessarily reflect the views of DARPA and AFRL. The United States
-            Government is authorized to reproduce and distribute reprints
-            notwithstanding any copyright notice herein.
-        </p>
-
-
-
-      </footer>
-    </div>
-
-  </body>
-</html>
+---
+layout: default
+css_id: integrations
+---
+<h3>Ongoing Integrations</h3>
+  <table>
+    <tr>
+      <td><img src="/assets/images/logos/repeatr.png"/></td>
+      <td>
+        We are actively working with <a href="https://repeatr.io">repeatr</a>
+        to create a cross-compatible metadata format that can be both used
+        for supply-chain step memoization and supply-chain security.
+      </td>
+    </tr>
+    <tr>
+      <td><img src="/assets/images/logos/reproducible-builds.png"/></td>
+      <td>
+        We are participating with the reproducible builds community to
+        improve the security properties of build systems. We are also
+        integrating in-toto into reprotest, so that people can create in-toto
+        metadta to attest for the reproducibility of a step.
+      </td>
+    </tr>
+    <tr>
+      <td><img src="/assets/images/logos/git.png"/></td>
+      <td>
+        We are working with the git community to improve the security model
+        of git metadata signing. We have already integrated three series
+        of patches to ensure GPG-signed git tags can't be spoofed. <!-- TODO: links -->
+      </td>
+    </tr>
+    <tr>
+      <td><img src="/assets/images/logos/debian.png"/></td>
+      <td>
+        We are actively working with the debian community so that in-toto
+        metadata is generated within Debian's software supply chain. In
+        addition, we intend to have in-toto metadata be verified when using
+        Debian's dpkg/apt toolchain.
+      </td>
+    </tr>
+    <tr>
+      <td><img src="/assets/images/logos/archlinux.png"/></td>
+      <td>
+        The Arch Linux community already included our patches
+        <a href='#'>git tag verification</a>. We aim to have an integration
+        similar to Debian's in the future.
+      </td>
+    </tr>
+    <tr>
+      <td><img src="/assets/images/logos/docker.png"></td>
+      <td>
+        Docker is currently trying out in-toto metadata internally to protect
+        the security properties of their pipelines.
+      </td>
+    </tr>
+    <tr>
+      <td><img src="/assets/images/logos/opensuse.png"></td>
+      <td>
+        We have a demo deployment of opensuse's OBS using in-toto. We are
+        working with the opensuse community to generate in-toto link metadata
+        within their OBS services.
+      </td>
+    </tr>
+  </table>

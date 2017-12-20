@@ -1,0 +1,8 @@
+# You can access these variables using jekyll template language and the
+# `site` variable, e.g.: {{site.title}}
+# Look at layouts/default.html to see how they are used
+title: in-toto
+description: A framework to secure the integrity of software supply chains
+logo_url: /assets/images/logo-black.png
+google_analytics: false
+exclude: ["LICENSE", "README.md"]

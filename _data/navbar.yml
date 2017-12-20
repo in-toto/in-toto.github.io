@@ -1,0 +1,34 @@
+- text: About
+  sub:
+    - text: What is in-toto?
+      url: /in-toto.html
+    - text: Ongoing Integrations
+      url: /integrations.html
+
+- text: Community
+  sub:
+    - text: Contact
+      url: /contact.html
+    - text: Contribute
+      url: https://github.com/in-toto/in-toto/
+      external: true
+
+- text: Get started
+  sub:
+    - text: Try it out
+      url: https://github.com/in-toto/demo
+      external: true
+    - text: Metadata examples
+      url: /metadata-examples.html
+    - text: Specifications
+      url: /specs.html
+    - text: Layout tool
+      url: https://in-toto.engineering.nyu.edu
+      external: true
+
+- text: Learn more
+  sub:
+    - text: News
+      url: /news.html
+    - text: Frequently Asked Questions
+      url: /faq.html

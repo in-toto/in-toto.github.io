@@ -1,127 +1,26 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="in-toto: A framework to secure the integrity of software supply chains" />
-    <LINK REL="icon" HREF="favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/navbar.css">
-
-    <title>in-toto</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <h1 id="project_title">
-            <a href="/">
-            <img class='logo' src="/images/logo-black.png"/>
-            </a>
-            <span>
-                in-toto
-            </span> </h1>
-          <h2 id="project_tagline">A framework to secure the integrity of software supply chains</h2>
-            <nav>
-                <ul>
-                    <li>
-                        <label for="drop-1">About</label>
-                        <input id="drop-1" type="checkbox">
-                        <ul>
-                            <li><a href="/in-toto.html">What is in-toto?</a></li>
-                            <li><a href="/integrations.html">Ongoing Integrations</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <label for="drop-2">Community</label>
-                        <input id="drop-2" type="checkbox"/>
-                        <ul>
-                            <li><a href="/contact.html">Contact</a></li>
-                            <li><a href="https://github.com/in-toto">Contribute</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <label for="drop-3">Get started</label>
-                        <input id="drop-3" type="checkbox"/>
-                        <ul>
-                            <li><a href="https://github.com/in-toto/demo">Try it out</a></li>
-                            <li><a href="/metadata-examples.html">Metadata examples</a></li>
-                            <li><a href="/specs.html">Specifications</a></li>
-                            <li><a href="http://in-toto.engineering.nyu.edu">Layout tool</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <label for="drop-4">Learn more</label>
-                        <input id="drop-4" type="checkbox"/>
-                        <ul>
-                            <li><a href="/news.html">News</a></li>
-                            <li><a href="#">Frequently Asked Questions</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="metadata-examples" class="inner">
-          <h3>Metadata Examples</h3>
-            <table>
-
-                <tr>
-                    <td> <a href="/examples/debian.html">Debian</a></td>
-
-                    <td>
-                      This demo metadata shows how the Debian project could use in-toto to secure their version of the grep package.
-                    </td>
-                </tr>
-
-
-                <tr>
-                    <td> <a href="/examples/seattle.html">Seattle</a></td>
-
-                    <td>
-                      Seattle is a fog-computing platform that already ships in-toto metadata with their releases. Here, you can see a pretty-printed version of the seattle metadata.
-                    </td>
-                </tr>
-
-            </table>
-        Don't forget to check out our <a
-href="https://github.com/in-toto/demo">demos</a> too.
-
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-
-        <p class="copyright">
-            in-toto is maintained by the <a href="https://ssl.engineering.nyu.edu">
-              Secure Systems Lab</a> at 
-             <a href="https://engineering.nyu.edu">New York University</a> 
-                as well as researchers from the
-                <a href="https://njit.edu">New Jersey Institute of Technology</a>.
-        </p>
-
-        <p class="acknowledgements"> 
-            This research was supported by the Defense Advanced Research
-            Projects Agency (DARPA) and the Air Force Research Laboratory
-            (AFRL). Any opinions, findings, and conclusions or recommendations
-            expressed in this material are those of the authors and do not
-            necessarily reflect the views of DARPA and AFRL. The United States
-            Government is authorized to reproduce and distribute reprints
-            notwithstanding any copyright notice herein.
-        </p>
-
-      </footer>
-    </div>
-
-  </body>
-</html>
+---
+layout: default
+css_id: metadata-examples
+---
+<h3>Metadata Examples</h3>
+<table>
+  <tr>
+    <td><a href="/examples/debian.html">Debian</a></td>
+    <td>
+      This demo metadata shows how the Debian project could use in-toto to
+      secure their version of the grep package.
+    </td>
+  </tr>
+  <tr>
+    <td><a href="/examples/seattle.html">Seattle</a></td>
+    <td>
+    Seattle is a fog-computing platform that already ships in-toto metadata
+    with their releases. Here, you can see a pretty-printed version of the
+    seattle metadata.
+    </td>
+  </tr>
+</table>
+<p>
+  Don't forget to check out our
+  <a href="https://github.com/in-toto/demo">demos</a> too.
+</p>
