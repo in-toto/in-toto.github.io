@@ -1,9 +1,9 @@
 # Jekyll in-toto website
 
-In-toto's project website is created with [Jekyll](jekyllrb.com) and extends
+In-toto's project website is created with [Jekyll](https://jekyllrb.com) and extends
 the [GitHub pages slate theme](https://github.com/pages-themes/slate).
 
-The site is available at [https://in-toto.io](in-toto.io)
+The site is available at [https://in-toto.io](https://in-toto.io)
 
 ## Maintenance and re-use
 
