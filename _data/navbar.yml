@@ -1,0 +1,31 @@
+- text: About
+  drop:
+    - text: What is in-toto?
+      link: /in-toto.html
+    - text: Ongoing Integrations
+      link: /integrations.html
+
+- text: Community
+  drop:
+    - text: Contact
+      link: /contact.html
+    - text: Contribute
+      link: https://github.com/in-toto/in-toto/
+
+- text: Get started
+  drop:
+    - text: Try it out
+      link: https://github.com/in-toto/demo
+    - text: Metadata examples
+      link: /metadata-examples.html
+    - text: Specifications
+      link: /specs.html
+    - text: Layout tool
+      link: https://in-toto.engineering.nyu.edu
+
+- text: Learn more
+  drop:
+    - text: News
+      link: /news.html
+    - text: Frequently Asked Questions
+      link: /faq.html
