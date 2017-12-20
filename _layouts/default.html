@@ -26,11 +26,13 @@
       </header>
     </div>
 
+    {% if site.data.navbar %}
     <div id="navbar_wrap" class="outer">
       <nav class="inner">
         {% include navbar.html %}
       </nav>
     </div>
+    {% endif %}
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
