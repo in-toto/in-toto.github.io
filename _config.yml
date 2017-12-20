@@ -4,3 +4,4 @@
 title: in-toto
 description: A framework to secure the integrity of software supply chains
 google_analytics: false
+exclude: ["LICENSE", "README.md"]
