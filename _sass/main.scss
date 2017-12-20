@@ -55,7 +55,7 @@ body {
   }
 }
 
-// Navbar
+// Navbar container style
 #navbar_wrap {
   .inner {
     padding-top: 0;
@@ -100,21 +100,24 @@ body {
     }
   }
 
-  // FIXME: A grid (e.g. flexbox) would be nicer than tables
-  .info-tagline {
-    margin: 50px 0;
-    & > div, & > img {
-      width: 49%;
-      display: inline-block;
-      vertical-align: middle;
-    }
-    a {
-      border: 2px solid $blue;
-      border-radius: 5px;
-      padding: 5px;
-      text-decoration: none;
-      &:hover {
-        background-color: $blue;
+  .info-tagline-container {
+    margin: 80px 0;
+    // FIXME: A grid (e.g. flexbox) would be nicer than tables
+    .info-tagline {
+      margin: 50px 0;
+      & > div, & > img {
+        width: 49%;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      a {
+        border: 2px solid $blue;
+        border-radius: 5px;
+        padding: 5px;
+        text-decoration: none;
+        &:hover {
+          background-color: $blue;
+        }
       }
     }
   }
