@@ -5,7 +5,14 @@
     <input id="drop-{{forloop.index}}" type="checkbox">
     <ul>
       {% for dropitem in item.drop %}
-      <li><a href="{{dropitem.link}}">{{dropitem.text}}</a></li>
+      <li>
+        <a href="{{dropitem.link}}">
+          {{dropitem.text}}
+          {% if dropitem.external %}
+          <img src="/assets/images/link-external.png">
+          {% endif %}
+        </a>
+      </li>
       {% endfor %}
     </ul>
   </li>

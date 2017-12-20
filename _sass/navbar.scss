@@ -31,6 +31,11 @@ nav label {
 /* Style for sub-nav items */
 nav a {
   color: black;
+  img {
+    vertical-align: middle;
+    height: 18px;
+    margin-left: 5px;
+  }
 }
 
 nav label:hover, nav a:hover {

@@ -11,17 +11,20 @@
       link: /contact.html
     - text: Contribute
       link: https://github.com/in-toto/in-toto/
+      external: true
 
 - text: Get started
   drop:
     - text: Try it out
       link: https://github.com/in-toto/demo
+      external: true
     - text: Metadata examples
       link: /metadata-examples.html
     - text: Specifications
       link: /specs.html
     - text: Layout tool
       link: https://in-toto.engineering.nyu.edu
+      external: true
 
 - text: Learn more
   drop:
