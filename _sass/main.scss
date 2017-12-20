@@ -58,7 +58,10 @@ body {
 // Navbar
 #navbar_wrap {
   .inner {
-    padding: 0;
+    padding-top: 0;
+    @media only screen and (min-width: 768px){
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -146,6 +149,3 @@ body {
     }
   }
 }
-
-
-
