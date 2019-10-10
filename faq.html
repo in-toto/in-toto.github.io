@@ -5,15 +5,15 @@ css_id: faq
 
 <h3>Frequently Asked Questions</h3>
 1. Why the name "in-toto"?
-in-toto is Latin for “as a whole". It is the first framework that holistically enforces the integrity of a software supply chain by gathering cryptographically verifiable information about the chain itself, from development to installation of the software.
+in-toto is Latin for “as a whole". We chose the name because our objective with in-toto is to build a system to protect the whole software supply chain.
 
 2. What is the difference between in-toto and TUF?
-The Update Framework (TUF) and in-toto are two faces of a coin. While TUF provides a framework (a set of libraries, file formats, and utilities) that can be used to secure new and existing software update systems, in-toto scans the entire software supply chain to make sure that all the stakeholders involved in development, build and shipment of the software produce exactly what they are supposed to. Together, they provide end-to-end protection for the whole software supply chain.
+TUF provides a framework that can be used to secure update systems (i.e., the last mile), whereas in-toto lets you verify the whole software supply chain. TUF and in-toto can play together very well, as you can use TUF to deliver updates and their corresponding in-toto metadata.
 
 3. Is Python 3 supported?
 Yes, Python 3 is supported with in-toto.
 
 4. Is there a timeline for the support of Python 2.7?
-Currently, we do not have any plans to retire Python 2.7 in the near future.
+Since some of our adopters don't plan on phasing out of Python2, therefore we are also not planning to phase it out any time soon.
 
 
